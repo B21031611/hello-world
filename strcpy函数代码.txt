@@ -1,0 +1,15 @@
+/**
+本地编辑
+**/
+char* StrCpy(char* src)
+{
+	int len = strlen(src);
+	char* Src = (char*)malloc((len+1)*sizeof(char));
+	while (src[0])
+	{
+		Src[0] = src[0];
+		src++;
+	}
+	Src[len] = '\0';
+	return Src;
+}
